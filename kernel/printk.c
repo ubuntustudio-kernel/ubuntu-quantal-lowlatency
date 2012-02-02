@@ -787,7 +787,7 @@ int log_buf_copy(char *dest, int idx, int len)
 	bool took_lock = false;
 
 	if (!oops_in_progress) {
-		spin_lock_irq(&logbuf_lock);
+		raw_spin_lock_irq(&logbuf_lock);
 		took_lock = true;
 	}
 
@@ -804,7 +804,7 @@ int log_buf_copy(char *dest, int idx, int len)
 	}
 
 	if (took_lock)
-		spin_unlock_irq(&logbuf_lock);
+		raw_spin_unlock_irq(&logbuf_lock);
 
 	return ret;
 }
