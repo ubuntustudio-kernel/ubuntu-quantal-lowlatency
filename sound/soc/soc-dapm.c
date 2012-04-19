@@ -3249,7 +3249,18 @@ int snd_soc_dapm_link_dai_widgets(struct snd_soc_card *card)
 	return 0;
 }
 
-static void soc_dapm_stream_event(struct snd_soc_pcm_runtime *rtd, int stream,
+/**
+ * snd_soc_dapm_stream_event - send a stream event to the dapm core
+ * @rtd: PCM runtime data
+ * @stream: stream name
+ * @event: stream event
+ *
+ * Sends a stream event to the dapm core. The core then makes any
+ * necessary widget power changes. For use by callers already holding mutex.
+ *
+ * Returns 0 for success else error.
+ */
+void snd_soc_dapm_stream_event(struct snd_soc_pcm_runtime *rtd, int stream,
 	int event)
 {
 
@@ -3307,7 +3318,7 @@ static void soc_dapm_stream_event(struct snd_soc_pcm_runtime *rtd, int stream,
 }
 
 /**
- * snd_soc_dapm_stream_event - send a stream event to the dapm core
+ * snd_soc_dapm_stream_event_locked - send a stream event to the dapm core
  * @rtd: PCM runtime data
  * @stream: stream name
  * @event: stream event
@@ -3317,13 +3328,13 @@ static void soc_dapm_stream_event(struct snd_soc_pcm_runtime *rtd, int stream,
  *
  * Returns 0 for success else error.
  */
-void snd_soc_dapm_stream_event(struct snd_soc_pcm_runtime *rtd, int stream,
+void snd_soc_dapm_stream_event_locked(struct snd_soc_pcm_runtime *rtd, int stream,
 			      int event)
 {
 	struct snd_soc_card *card = rtd->card;
 
 	mutex_lock_nested(&card->dapm_mutex, SND_SOC_DAPM_CLASS_RUNTIME);
-	soc_dapm_stream_event(rtd, stream, event);
+	snd_soc_dapm_stream_event(rtd, stream, event);
 	mutex_unlock(&card->dapm_mutex);
 }
 
