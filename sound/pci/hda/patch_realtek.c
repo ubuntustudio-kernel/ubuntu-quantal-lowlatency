@@ -7097,3 +7097,4 @@ static void __exit patch_realtek_exit(void)
 
 module_init(patch_realtek_init)
 module_exit(patch_realtek_exit)
+
