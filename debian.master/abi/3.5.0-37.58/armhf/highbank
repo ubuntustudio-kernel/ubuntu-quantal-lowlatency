@@ -1712,6 +1712,12 @@ EXPORT_SYMBOL net/can/can 0x00000000	can_rx_unregister
 EXPORT_SYMBOL net/can/can 0x00000000	can_send
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	__ceph_open_session
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_alloc_page_vector
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_create_authorizer
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_destroy_authorizer
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_invalidate_authorizer
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_is_authenticated
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_update_authorizer
+EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_auth_verify_authorizer_reply
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_buffer_new
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_buffer_release
 EXPORT_SYMBOL net/ceph/libceph 0x00000000	ceph_calc_file_object_mapping
@@ -3476,6 +3482,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	flow_cache_lookup
 EXPORT_SYMBOL vmlinux 0x00000000	flush_dcache_page
 EXPORT_SYMBOL vmlinux 0x00000000	flush_delayed_work
 EXPORT_SYMBOL vmlinux 0x00000000	flush_delayed_work_sync
+EXPORT_SYMBOL vmlinux 0x00000000	flush_kernel_dcache_page
 EXPORT_SYMBOL vmlinux 0x00000000	flush_old_exec
 EXPORT_SYMBOL vmlinux 0x00000000	flush_scheduled_work
 EXPORT_SYMBOL vmlinux 0x00000000	flush_signals
@@ -7019,6 +7026,7 @@ EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_find_get_deviceid
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_init_deviceid_node
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_init_ds_session
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_insert_deviceid_node
+EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_print_deviceid
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_proc_getdeviceinfo
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_proc_getdevicelist
 EXPORT_SYMBOL_GPL fs/nfs/nfs 0x00000000	nfs4_put_deviceid_node
@@ -8312,6 +8320,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_pm_exit
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_pm_register_notifier
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_pm_unregister_notifier
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_subsys
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_topology
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpu_up
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cpuset_mem_spread_node
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	cred_to_ucred
