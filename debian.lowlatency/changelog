@@ -1,3 +1,9 @@
+linux-lowlatency (3.5.0-37.39) quantal; urgency=low
+
+  * No change, new build
+
+ -- Kaj Ailomaa <zequence@mousike.me>  Tue, 16 Jul 2013 22:01:34 +0200
+
 linux-lowlatency (3.5.0-37.38) quantal-proposed; urgency=low
 
   [ Kaj Ailomaa ]
