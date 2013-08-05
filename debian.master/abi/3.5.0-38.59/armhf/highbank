@@ -9024,6 +9024,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	net_prio_subsys_id
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	netdev_rx_handler_register
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	netdev_rx_handler_unregister
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	netlink_has_listeners
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	nf_ipv6_ops
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	nf_register_afinfo
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	nf_unregister_afinfo
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	nf_unregister_queue_handlers
