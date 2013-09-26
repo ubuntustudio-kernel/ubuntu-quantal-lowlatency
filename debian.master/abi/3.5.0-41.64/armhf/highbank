@@ -1681,6 +1681,7 @@ EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_register_cb
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_register_dev
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_resume_dev
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_send_acl
+EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_send_cmd
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_send_sco
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_suspend_dev
 EXPORT_SYMBOL net/bluetooth/bluetooth 0x00000000	hci_unregister_cb
