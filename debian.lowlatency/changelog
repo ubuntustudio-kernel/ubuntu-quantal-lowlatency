@@ -4,6 +4,176 @@ linux-lowlatency (3.5.0-45.46) UNRELEASED; urgency=low
   CHANGELOG: Use the printchanges target to see the curent changes.
   CHANGELOG: Use the insertchanges target to create the final log.
 
+  [ Ubuntu: 3.5.0-45.68 ]
+
+  * Release Tracking Bug
+    - LP: #1257035
+  * SAUCE: (no-up) drm/i915: i915.disable_pch_pwm overrides PCH_PWM_ENABLE
+    quirk
+    - LP: #1163720
+  * nfs: don't allow nfs_find_actor to match inodes of the wrong type
+    - LP: #1257002
+  * jfs: fix error path in ialloc
+    - LP: #1257002
+  * mac80211: drop spoofed packets in ad-hoc mode
+    - LP: #1257002
+  * mac80211: use sta_info_get_bss() for nl80211 tx and client probing
+    - LP: #1257002
+  * mac80211: update sta->last_rx on acked tx frames
+    - LP: #1257002
+  * iwlwifi: pcie: add SKUs for 6000, 6005 and 6235 series
+    - LP: #1257002
+  * libata: make ata_eh_qc_retry() bump scmd->allowed on bogus failures
+    - LP: #1257002
+  * mac80211: correctly close cancelled scans
+    - LP: #1257002
+  * rtlwifi: rtl8192cu: Fix error in pointer arithmetic
+    - LP: #1257002
+  * wireless: radiotap: fix parsing buffer overrun
+    - LP: #1257002
+  * drm/vmwgfx: Don't kill clients on VT switch
+    - LP: #1257002
+  * ecryptfs: Fix memory leakage in keystore.c
+    - LP: #1257002
+  * drm: Prevent overwriting from userspace underallocating core ioctl
+    structs
+    - LP: #1257002
+  * drm: Pad drm_mode_get_connector to 64-bit boundary
+    - LP: #1257002
+  * drm/radeon/atom: workaround vbios bug in transmitter table on rs780
+    - LP: #1257002
+  * md: Fix skipping recovery for read-only arrays.
+    - LP: #1257002
+  * md: avoid deadlock when md_set_badblocks.
+    - LP: #1257002
+  * target/pscsi: fix return value check
+    - LP: #1257002
+  * parisc: Do not crash 64bit SMP kernels on machines with >= 4GB RAM
+    - LP: #1257002
+  * USB: serial: ftdi_sio: add id for Z3X Box device
+    - LP: #1257002
+  * clockevents: Sanitize ticks to nsec conversion
+    - LP: #1257002
+  * perf: Fix perf ring buffer memory ordering
+    - LP: #1257002
+  * xtensa: don't use alternate signal stack on threads
+    - LP: #1257002
+  * ASoC: dapm: Fix source list debugfs outputs
+    - LP: #1257002
+  * ASoC: wm_hubs: Add missing break in hp_supply_event()
+    - LP: #1257002
+  * uml: check length in exitcode_proc_write()
+    - LP: #1257002
+  * staging: ozwpan: prevent overflow in oz_cdev_write()
+    - LP: #1257002
+  * aacraid: missing capable() check in compat ioctl
+    - LP: #1257002
+  * staging: wlags49_h2: buffer overflow setting station name
+    - LP: #1257002
+  * Staging: bcm: info leak in ioctl
+    - LP: #1257002
+  * ALSA: fix oops in snd_pcm_info() caused by ASoC DPCM
+    - LP: #1257002
+  * lib/scatterlist.c: don't flush_kernel_dcache_page on slab page
+    - LP: #1257002
+  * scripts/kallsyms: filter symbols not in kernel address space
+    - LP: #1257002
+  * xen-netback: use jiffies_64 value to calculate credit timeout
+    - LP: #1257002
+  * net: flow_dissector: fail on evil iph->ihl
+    - LP: #1257002
+  * PCI/PM: Clear state_saved during suspend
+    - LP: #1257002
+  * ALSA: hda - Move one-time init codes from generic_hdmi_init()
+    - LP: #1212160, #1257002
+  * NFSv4: Fix a use-after-free situation in _nfs4_proc_getlk()
+    - LP: #1257002
+  * USB: mos7840: fix tiocmget error handling
+    - LP: #1257002
+  * usb: Disable USB 2.0 Link PM before device reset.
+    - LP: #1257002
+  * usb: hub: Clear Port Reset Change during init/resume
+    - LP: #1257002
+  * rt2400pci: fix RSSI read
+    - LP: #1257002
+  * rt2x00: check if device is still available on rt2x00mac_flush()
+    - LP: #1257002
+  * rt2800usb: slow down TX status polling
+    - LP: #1257002
+  * alarmtimer: return EINVAL instead of ENOTSUPP if rtcdev doesn't exist
+    - LP: #1257002
+  * ARM: OMAP2+: irq, AM33XX add missing register check
+    - LP: #1257002
+  * USB：add new zte 3g-dongle's pid to option.c
+    - LP: #1257002
+  * libata: Fix display of sata speed
+    - LP: #1257002
+  * ahci: disabled FBS prior to issuing software reset
+    - LP: #1257002
+  * drivers/libata: Set max sector to 65535 for Slimtype DVD A DS8A9SH
+    drive
+    - LP: #1257002
+  * ALSA: 6fire: Fix probe of multiple cards
+    - LP: #1257002
+  * usb: wusbcore: set the RPIPE wMaxPacketSize value correctly
+    - LP: #1257002
+  * usb: wusbcore: change WA_SEGS_MAX to a legal value
+    - LP: #1257002
+  * powerpc/vio: use strcpy in modalias_show
+    - LP: #1257002
+  * can: c_can: Fix RX message handling, handle lost message before EOB
+    - LP: #1257002
+  * ASoC: ak4642: prevent un-necessary changes to SG_SL1
+    - LP: #1257002
+  * ahci: Add Device IDs for Intel Wildcat Point-LP
+    - LP: #1257002
+  * powerpc/powernv: Add PE to its own PELTV
+    - LP: #1257002
+  * perf/ftrace: Fix paranoid level for enabling function tracer
+    - LP: #1257002
+  * ALSA: hda - Add support for CX20952
+    - LP: #1257002
+  * qeth: avoid buffer overflow in snmp ioctl
+    - LP: #1257002
+  * cris: media platform drivers: fix build
+    - LP: #1257002
+  * mm: ensure get_unmapped_area() returns higher address than
+    mmap_min_addr
+    - LP: #1257002
+  * vsprintf: check real user/group id for %pK
+    - LP: #1257002
+  * backlight: atmel-pwm-bl: fix reported brightness
+    - LP: #1257002
+  * backlight: atmel-pwm-bl: fix gpio polarity in remove
+    - LP: #1257002
+  * devpts: plug the memory leak in kill_sb
+    - LP: #1257002
+  * netfilter: nf_ct_sip: don't drop packets with offsets pointing outside
+    the packet
+    - LP: #1257002
+  * tracing: Fix potential out-of-bounds in trace_get_user()
+    - LP: #1257002
+  * ARM: 7668/1: fix memset-related crashes caused by recent GCC (4.7.2)
+    optimizations
+    - LP: #1257002
+  * ARM: 7670/1: fix the memset fix
+    - LP: #1257002
+  * usb: fix cleanup after failure in hub_configure()
+    - LP: #1257002
+  * include/linux/fs.h: disable preempt when acquire i_size_seqcount write
+    lock
+    - LP: #1257002
+  * 8139cp: re-enable interrupts after tx timeout
+    - LP: #1257002
+  * SUNRPC handle EKEYEXPIRED in call_refreshresult
+    - LP: #1257002
+  * Fix a few incorrectly checked [io_]remap_pfn_range() calls
+    - LP: #1257002
+  * crypto: ansi_cprng - Fix off by one error in non-block size request
+    - LP: #1257002
+  * Linux 3.5.7.26
+    - LP: #1257002
+
  -- Kaj Ailomaa <zequence@mousike.me>  Tue, 03 Dec 2013 12:23:03 +0100
 
 linux-lowlatency (3.5.0-44.45) quantal-proposed; urgency=low
