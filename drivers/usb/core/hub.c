@@ -2150,18 +2150,13 @@ static int usb_enumerate_device(struct usb_device *udev)
 			goto fail;
 		}
 	}
-	if (udev->wusb == 1 && udev->authorized == 0) {
-		udev->product = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-		udev->manufacturer = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-		udev->serial = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-	}
-	else {
-		/* read the standard strings and cache them if present */
-		udev->product = usb_cache_string(udev, udev->descriptor.iProduct);
-		udev->manufacturer = usb_cache_string(udev,
-						      udev->descriptor.iManufacturer);
-		udev->serial = usb_cache_string(udev, udev->descriptor.iSerialNumber);
-	}
+
+	/* read the standard strings and cache them if present */
+	udev->product = usb_cache_string(udev, udev->descriptor.iProduct);
+	udev->manufacturer = usb_cache_string(udev,
+					      udev->descriptor.iManufacturer);
+	udev->serial = usb_cache_string(udev, udev->descriptor.iSerialNumber);
+
 	err = usb_enumerate_device_otg(udev);
 fail:
 	return err;
@@ -2323,13 +2318,6 @@ int usb_deauthorize_device(struct usb_device *usb_dev)
 	manufacturer = usb_dev->manufacturer;
 	serial = usb_dev->serial;
 
-	usb_dev->product = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-	usb_dev->manufacturer = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-	usb_dev->serial = kstrdup("n/a (unauthorized)", GFP_KERNEL);
-
-	usb_destroy_configuration(usb_dev);
-	usb_dev->descriptor.bNumConfigurations = 0;
-
 out_unauthorized:
 	usb_unlock_device(usb_dev);
 	if (product || manufacturer || serial) {
@@ -2370,14 +2358,8 @@ int usb_authorize_device(struct usb_device *usb_dev)
 	manufacturer = usb_dev->manufacturer;
 	serial = usb_dev->serial;
 	
-	usb_dev->product = NULL;
-	usb_dev->manufacturer = NULL;
-	usb_dev->serial = NULL;
-
 	usb_dev->authorized = 1;
 	result = usb_enumerate_device(usb_dev);
-	if (result < 0)
-		goto error_enumerate;
 	/* Choose and set the configuration.  This registers the interfaces
 	 * with the driver core and lets interface drivers bind to them.
 	 */
@@ -2393,7 +2375,6 @@ int usb_authorize_device(struct usb_device *usb_dev)
 	}
 	dev_info(&usb_dev->dev, "authorized to connect\n");
 
-error_enumerate:
 error_device_descriptor:
 	usb_autosuspend_device(usb_dev);
 error_autoresume:
