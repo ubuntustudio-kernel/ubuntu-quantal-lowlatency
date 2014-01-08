@@ -1,3 +1,12 @@
+linux (3.5.0-46.70) quantal; urgency=low
+
+  [ Brad Figg ]
+
+  * UBUNTU: Disable abi and module checking due to broken modules being
+    disabled and we have bumped the abi.
+
+ -- Brad Figg <brad.figg@canonical.com>  Wed, 08 Jan 2014 09:51:35 -0800
+
 linux (3.5.0-46.69) quantal; urgency=low
 
   [Steve Conklin]
