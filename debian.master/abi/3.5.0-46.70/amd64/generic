@@ -2064,9 +2064,10 @@ EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common 0xf836e446	r
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common 0xf9956590	rtl92c_dm_write_dig
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x08f81ddf	rtl_ps_set_rf_state
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x0d60e044	rtl_cam_empty_entry
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x1936d873	rtlwifi_rate_mapping
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x2453dae4	rtl_cam_delete_one_entry
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x3794c9ac	rtl_get_tcb_desc
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x3ce825f7	rtl_cam_mark_invalid
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x4e78a540	rtlwifi_rate_mapping
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x50101caa	rtl_usb_suspend
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x5fd74d4e	rtl_cam_add_one_entry
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x60ca02e7	rtl_usb_resume
@@ -2075,13 +2076,12 @@ EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x80145d3a	rtl_efuse_shadow_m
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x877d4ed7	rtl_cam_get_free_entry
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x930f0588	rtl_pci_probe
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xa1d24198	rtl_pci_disconnect
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xa84d3172	rtl_get_tcb_desc
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xaad4532a	efuse_read_1byte
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xadecd4b0	rtl_usb_disconnect
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xb2099455	rtl_fw_cb
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xb512172c	rtl_init_rfkill
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xb68650b1	rtl_ps_enable_nic
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xbca504b6	rtl_cam_reset_all_entry
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xc9251e1a	rtl_init_rfkill
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xd2a32ccb	rtl_usb_probe
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xd464eb36	rtl_ps_disable_nic
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xdc55185d	rtl_pci_resume

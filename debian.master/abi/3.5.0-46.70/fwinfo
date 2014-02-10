@@ -551,6 +551,7 @@ firmware:       v4l-pvrusb2-24xxx-01.fw
 firmware:       v4l-pvrusb2-29xxx-01.fw
 firmware:       v4l-pvrusb2-73xxx-01.fw
 firmware:       vicam/firmware.fw
+firmware:       vntwusb.fw
 firmware:       vx/bd56002.boot
 firmware:       vx/bd563s3.boot
 firmware:       vx/bd563v2.boot

@@ -2037,14 +2037,15 @@ EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common 0xe8a178e1	r
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common 0xfb561bf3	_rtl92c_store_pwrIndex_diffrate_offset
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x022a089a	rtl_usb_disconnect
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x0a40d4b3	rtl_pci_resume
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x0dc682e9	rtlwifi_rate_mapping
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x1580ec8f	rtl_cam_empty_entry
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x2685226f	rtl_get_tcb_desc
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x2e3056ec	rtlwifi_rate_mapping
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x2f2af462	rtl_cam_get_free_entry
+EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x3c1f0ea9	rtl_init_rfkill
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x580a2562	rtl_pci_probe
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x5ea2c53a	rtl_efuse_shadow_map_update
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x674be621	rtl_ps_set_rf_state
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x6833a169	rtl_ps_disable_nic
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x7315131c	rtl_init_rfkill
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x770e30a5	rtl_cam_mark_invalid
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x786c6e4a	rtl_ps_enable_nic
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0x81c26600	rtl_cam_add_one_entry
@@ -2058,7 +2059,6 @@ EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xc503ea33	rtl_cam_del_entry
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xe6380d84	rtl_cam_delete_one_entry
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xec8b02b7	rtl_usb_probe
 EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xf53abe39	efuse_read_1byte
-EXPORT_SYMBOL drivers/net/wireless/rtlwifi/rtlwifi 0xfc18298a	rtl_get_tcb_desc
 EXPORT_SYMBOL drivers/net/wireless/ti/wlcore/wlcore 0x7aa14227	wl1271_tx_complete
 EXPORT_SYMBOL drivers/net/wireless/ti/wlcore/wlcore 0x84b631ad	wlcore_calc_packet_alignment
 EXPORT_SYMBOL drivers/parport/parport 0x0a0c0387	parport_ieee1284_ecp_write_data
