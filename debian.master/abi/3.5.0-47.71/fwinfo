@@ -449,7 +449,10 @@ firmware:       rtl_nic/rtl8411-1.fw
 firmware:       rtlwifi/rtl8192cfw.bin
 firmware:       rtlwifi/rtl8192cfwU_B.bin
 firmware:       rtlwifi/rtl8192cfwU.bin
+firmware:       rtlwifi/rtl8192cufw_A.bin
+firmware:       rtlwifi/rtl8192cufw_B.bin
 firmware:       rtlwifi/rtl8192cufw.bin
+firmware:       rtlwifi/rtl8192cufw_TMSC.bin
 firmware:       rtlwifi/rtl8192defw.bin
 firmware:       rtlwifi/rtl8192sefw.bin
 firmware:       rtlwifi/rtl8712u.bin

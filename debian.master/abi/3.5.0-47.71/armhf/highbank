@@ -4479,6 +4479,7 @@ EXPORT_SYMBOL vmlinux 0x00000000	nonseekable_open
 EXPORT_SYMBOL vmlinux 0x00000000	noop_fsync
 EXPORT_SYMBOL vmlinux 0x00000000	noop_llseek
 EXPORT_SYMBOL vmlinux 0x00000000	noop_qdisc
+EXPORT_SYMBOL vmlinux 0x00000000	nosteal_pipe_buf_ops
 EXPORT_SYMBOL vmlinux 0x00000000	notify_change
 EXPORT_SYMBOL vmlinux 0x00000000	nr_cpu_ids
 EXPORT_SYMBOL vmlinux 0x00000000	ns_capable
@@ -9103,6 +9104,7 @@ EXPORT_SYMBOL_GPL vmlinux 0x00000000	platform_get_irq
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	platform_get_irq_byname
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	platform_get_resource
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	platform_get_resource_byname
+EXPORT_SYMBOL_GPL vmlinux 0x00000000	pm_freezing
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pm_generic_freeze
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pm_generic_freeze_late
 EXPORT_SYMBOL_GPL vmlinux 0x00000000	pm_generic_freeze_noirq
