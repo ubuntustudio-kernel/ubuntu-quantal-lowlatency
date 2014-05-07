@@ -7122,7 +7122,6 @@ EXPORT_SYMBOL_GPL drivers/staging/ipack/ipack 0xf80f0d19	ipack_driver_register
 EXPORT_SYMBOL_GPL drivers/staging/rts5139/rts5139 0x35b85807	rts5139_usb_ids
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x0e81c76d	spk_serial_out
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x14f06fe7	spk_serial_in_nowait
-EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x2743dfae	serial_synth_probe
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x3509aeb4	spk_synth_flush
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x3f3fb65e	spk_synth_immediate
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x41a160e5	synth_buffer_empty
@@ -7138,11 +7137,12 @@ EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x8905e8b3	speakup_info
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x8d9c4fb4	spk_var_show
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x8e146195	synth_release_region
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x9a888082	synth_buffer_getc
+EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb2226ecd	spk_serial_synth_probe
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb48956f8	synth_buffer_peek
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb5acc53d	spk_var_store
-EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb73a5748	get_var
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xbbd15a51	speakup_start_ttys
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xc766ae09	synth_printf
+EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xd1b551a2	spk_get_var
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xe7cd4558	spk_serial_release
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xe7e810f8	spk_serial_in
 EXPORT_SYMBOL_GPL drivers/staging/usbip/usbip-core 0x082ebfcb	usbip_pack_pdu

@@ -80,7 +80,6 @@ EXPORT_SYMBOL drivers/firewire/firewire-core 0x04dd92ce	fw_core_add_descriptor
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x0963b1dd	fw_iso_context_destroy
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x0b1a1cef	fw_iso_context_start
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x16e91e21	fw_csr_iterator_next
-EXPORT_SYMBOL drivers/firewire/firewire-core 0x2396cabe	fw_device_enable_phys_dma
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x2885fec5	fw_get_request_speed
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x2ffd146b	fw_send_request
 EXPORT_SYMBOL drivers/firewire/firewire-core 0x3130e238	fw_iso_context_queue
@@ -102,6 +101,7 @@ EXPORT_SYMBOL drivers/firewire/firewire-core 0x9a8eb8db	fw_cancel_transaction
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xaaf772dc	fw_send_response
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xac7f5b76	fw_card_add
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xb80dd2e0	fw_iso_context_create
+EXPORT_SYMBOL drivers/firewire/firewire-core 0xba192c1a	fw_device_enable_phys_dma
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xbd2d0ddf	fw_card_initialize
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xc88d56e2	fw_core_handle_response
 EXPORT_SYMBOL drivers/firewire/firewire-core 0xd1ff3432	fw_bus_type
@@ -9619,18 +9619,18 @@ EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x4449e1dd	synth_buffer_clear
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x475e158a	synth_request_region
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x4f19ce72	spk_synth_immediate
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x5f23a9c8	speakup_event
+EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x615ca87e	spk_serial_synth_probe
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x62a50122	synth_remove
-EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x7c39f188	serial_synth_probe
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x7c596e7b	spk_synth_is_alive_nop
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x7fc8c368	spk_synth_flush
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x8e146195	synth_release_region
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0x9a888082	synth_buffer_getc
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xaf7d501c	spk_do_catch_up
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb48956f8	synth_buffer_peek
-EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xb73a5748	get_var
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xbbd15a51	speakup_start_ttys
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xc766ae09	synth_printf
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xce56e8c5	speakup_info
+EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xd1b551a2	spk_get_var
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xe0033b1b	spk_synth_is_alive_restart
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xe7cd4558	spk_serial_release
 EXPORT_SYMBOL_GPL drivers/staging/speakup/speakup 0xe7e810f8	spk_serial_in
