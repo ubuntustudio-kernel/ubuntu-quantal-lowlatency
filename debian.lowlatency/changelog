@@ -196,7 +196,7 @@ linux-lowlatency (3.5.0-51.51) quantal-proposed; urgency=low
 
   * n_tty: Fix n_tty_write crash when echoing in raw mode
 
- --  <>  Sat, 10 May 2014 21:47:12 +0200
+ -- Kaj Ailomaa <zequence@mousike.me>  Sat, 10 May 2014 21:47:12 +0200
 
 linux-lowlatency (3.5.0-49.50) quantal-proposed; urgency=low
 
